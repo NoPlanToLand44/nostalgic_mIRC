@@ -1,1 +1,20 @@
-readme file
+for now the only thing working is an echo 2 way server 
+it consists of a websocket connection and asynchronous connection of as many clients as u like . 
+
+
+
+
+run:
+
+python -m venv .venv
+
+pip install fastapi uvicorn websockets uuid asyncio
+
+
+to run the server: 
+
+uvicorn server.src.server:app --host 0.0.0.0 --port 8000 --reload
+
+to run a client: 
+
+python chat-app\client.python

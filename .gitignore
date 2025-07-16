@@ -1,1 +1,3 @@
 /.venv
+/server/src/__pycache__
+requirements.txt
