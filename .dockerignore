@@ -1,0 +1,37 @@
+# Client application (not needed in server container)
+chat-app/
+client.py
+
+# Python cache and virtual environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Git
+.git/
+.gitignore
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+readme
+*.md
+
+# Other build artifacts
+.pytest_cache/
+.coverage
+htmlcov/

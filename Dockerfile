@@ -1,11 +1,12 @@
-FROM python:3.90-slim
+FROM python:3.9-slim
 
 WORKDIR /app
 
-COPY ./requirements ./
+COPY ./requirements.txt .
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
 
-COPY ./src ./src
-expose 8000
+COPY ./server ./server
 
-CMD ["uvicorn", "src.server:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+EXPOSE 8000
+
+CMD ["uvicorn", "server.src.server:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
